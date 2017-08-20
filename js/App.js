@@ -46,16 +46,26 @@ export default class App extends Component {
 
         <div className="row">
           <div className="col-sm-12">
-            <Toolbar initialData={this.initialData} data={this.state.data} update={this.updateData.bind(this)} />
+            <Toolbar
+                initialData={this.initialData}
+                data={this.state.data}
+                update={this.updateData.bind(this)}
+            />
           </div>
         </div>
 
         <div className="row">
           <div className="col-sm-4 col-md-3 col-lg-2">
-            <ActiveUser data={this.state.data} active={this.state.active} />
+            <ActiveUser
+                data={this.state.data}
+                active={this.state.active}
+            />
           </div>
           <div className="col-sm-8 col-md-9 col-lg-10">
-            <UserList data={this.state.data} update={this.updateData.bind(this)} />
+            <UserList
+                data={this.state.data}
+                update={this.updateData.bind(this)}
+            />
           </div>
         </div>
 
